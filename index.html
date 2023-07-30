@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <!-- Bootstrap styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 2 - The Calculator</title>
+  </head>
+  <body class="vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-4">
+          <input
+            type="text"
+            class="output form-control"
+            name="output"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-2">
+          <input
+            class="btn btn-secondary w-100"
+            type="button"
+            value="C"
+            onclick="clearOutput()"
+          />
+        </div>
+        <div class="col col-sm-2">
+          <input
+            class="btn btn-secondary w-100"
+            type="button"
+            value="Del"
+            onclick="backspace()"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="7"
+            onclick="put(7)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="8"
+            onclick="put(8)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="9"
+            onclick="put(9)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-secondary w-100"
+            type="button"
+            value="/"
+            onclick="put('/')"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="4"
+            onclick="put(4)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="5"
+            onclick="put(5)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="6"
+            onclick="put(6)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-secondary w-100"
+            type="button"
+            value="*"
+            onclick="put('*')"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="1"
+            onclick="put(1)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="2"
+            onclick="put(2)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="3"
+            onclick="put(3)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-secondary w-100"
+            type="button"
+            value="-"
+            onclick="put('-')"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value="0"
+            onclick="put(0)"
+          />
+        </div>
+        <div class="col col-sm-1">
+          <input
+            class="btn btn-light w-100"
+            type="button"
+            value=","
+            onclick="put('.')"
+          />
+        </div>
+        <div class="col col-sm-2">
+          <input
+            class="btn btn-secondary w-100"
+            type="button"
+            value="+"
+            onclick="put('+')"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-sm-4">
+          <input
+            class="btn btn-info w-100"
+            type="button"
+            value="="
+            onclick="result()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
